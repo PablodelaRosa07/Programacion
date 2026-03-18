@@ -1,0 +1,5 @@
+package Objetos.NominaEmpresa.Models;
+
+public enum Categoria {
+    JEFE_PROYECTO,SCRUM_MASTER,DESARROLLADOR_SENIOR,DESAARROLLADOR_JUNIOR,ARQUITECTO
+}
