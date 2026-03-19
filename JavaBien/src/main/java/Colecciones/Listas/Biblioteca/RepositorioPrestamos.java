@@ -41,13 +41,15 @@ public class RepositorioPrestamos {
         }
     }
 
-    public void mostrarHistorialOrdenado() {
+    /*public void mostrarHistorialOrdenado() {
         if (historialPrestamos.isEmpty()) {
             System.out.println("No hay registros de préstamos.");
         } else {
-            historialPrestamos.forEach(System.out::println);
+            for (int i = 0; i < historialPrestamos.size(); i++) {
+                System.out.println(historialPrestamos[i]);
+            }
         }
-    }
+    } */
 
     public void buscarPorTituloYAutor(String titulo, String autor) {
         System.out.println("Historial para: " + titulo + " de " + autor);
