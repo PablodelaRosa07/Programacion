@@ -1,4 +1,4 @@
-package Colecciones.Clone.EmpresaCoches;
+package Clone.EmpresaCoches;
 
 public class Motor implements Cloneable{
 

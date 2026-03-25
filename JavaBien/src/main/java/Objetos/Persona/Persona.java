@@ -9,7 +9,7 @@ public class Persona {
     String deporteFavorito;
     String peliFav;
 
-    public Persona(int edad, String nombre, String lugarNacimiento, String deporteFavorito, String peliFav) {
+    public Persona(String nombre) {
         this.edad = edad; // con this te estás refiriendo a los atributos de dentro de las clases
         this.nombre = nombre;
         this.lugarNacimiento = lugarNacimiento;

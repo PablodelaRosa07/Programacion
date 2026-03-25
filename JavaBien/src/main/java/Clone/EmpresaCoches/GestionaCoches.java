@@ -1,4 +1,4 @@
-package Colecciones.Clone.EmpresaCoches;
+package Clone.EmpresaCoches;
 
 public class GestionaCoches implements Cloneable{
     static void main(String[] args) {

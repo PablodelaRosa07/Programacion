@@ -1,4 +1,4 @@
-package Colecciones.Clone.ReservaViajes;
+package Clone.ReservaViajes;
 
 import java.util.Objects;
 

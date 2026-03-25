@@ -1,4 +1,4 @@
-package Colecciones.Clone.EmpresaCoches;
+package Clone.EmpresaCoches;
 
 public enum Combustible {
     GASOLINA, DIESEL, ELECTRICO
