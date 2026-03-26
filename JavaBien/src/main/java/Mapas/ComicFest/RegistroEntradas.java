@@ -21,16 +21,47 @@ public class RegistroEntradas {
         }
     }
 
-    public EntradaVIP buscarEntrada(String nick, String plataforma) {
-        Influencer influencer = new Influencer(nick, plataforma);
+    public EntradaVIP buscarEntrada(String nick, String plataforma, Influencer influencer) {
+        influencer = new Influencer(nick, plataforma);
         EntradaVIP entradaEncontrada = mapaRegistro.get(influencer);
 
         return entradaEncontrada;
     }
 
-    public EntradaVIP confirmarAsistencia(String nick, String plataforma){
-        Influencer influencer = new Influencer(nick, plataforma);
-        EntradaVIP entradaVIP =
+    public Map<Influencer, EntradaVIP> confirmarAsistencia(Influencer influencer, EntradaVIP entradaVip){
+        EntradaVIP entradaEncontrada = buscarEntrada(influencer.getNick(), influencer.getPlataforma(), influencer);
+        if(!(entradaEncontrada == null)){
+            entradaVip.setEstadoEntrada(EstadoEntrada.CONFIRMADA);
+            mapaRegistro.put(influencer, entradaEncontrada);
+        }
+        else  {
+            System.out.println("La entrada no existe");
+        }
+
+        return mapaRegistro;
+    }
+
+    public void cancelarAsistencia(Influencer influencer, EntradaVIP entradaVip){
+        EntradaVIP entradaEncontrada = buscarEntrada(influencer.getNick(), influencer.getPlataforma(), influencer);
+        if(!(entradaEncontrada == null)){
+            entradaVip.setEstadoEntrada(EstadoEntrada.CANCELADA);
+        }
+        else  {
+            System.out.println("La entrada no existe");
+        }
+    }
+
+    public void mostrarDatos(){
+        for (int i = 0; i < mapaRegistro.size(); i++) {
+            System.out.println(mapaRegistro);
+        }
+        System.out.println(mapaRegistro);
+    }
+
+    static void main(String[] args) {
+        RegistroEntradas registroEntradas = new RegistroEntradas();
+        registroEntradas.mostrarDatos();
     }
 }
+
 
