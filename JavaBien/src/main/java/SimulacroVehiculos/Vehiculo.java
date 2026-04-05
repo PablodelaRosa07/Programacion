@@ -1,94 +1,56 @@
 package SimulacroVehiculos;
 
-import java.util.Objects;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Vehiculo {
-
-    private String numBastidor;
-    private int numMatricula;
+class Vehiculo {
+    private String vin; // Identificador único
+    private String matricula;
     private String marca;
     private String modelo;
-    private int anyoFabricacion;
+    private int anioFabricacion;
     private String propietarioActual;
+    private List<Rematriculacion> historialRematriculaciones;
 
-    public Vehiculo(String numBastidor, int numMatricula, String marca, String modelo, int anyoFabricacion, String propietarioActual) {
-        this.numBastidor = numBastidor;
-        this.numMatricula = numMatricula;
+    public Vehiculo(String vin, String matricula, String marca, String modelo, int anioFabricacion, String propietarioActual) {
+        this.vin = vin;
+        this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
-        this.anyoFabricacion = anyoFabricacion;
+        this.anioFabricacion = anioFabricacion;
         this.propietarioActual = propietarioActual;
+        this.historialRematriculaciones = new ArrayList<>();
     }
 
-    public String getNumBastidor() {
-        return numBastidor;
-    }
+    public String getVin() { return vin; }
+    public String getMatricula() { return matricula; }
+    public String getPropietarioActual() { return propietarioActual; }
+    public List<Rematriculacion> getHistorial() { return historialRematriculaciones; }
 
-    public void setNumBastidor(String numBastidor) {
-        this.numBastidor = numBastidor;
-    }
+    public void rematricular(String nuevaMatricula, LocalDate fecha) {
+        for (Rematriculacion r : historialRematriculaciones) {
+            if (r.getFecha().equals(fecha)) {
+                throw new IllegalArgumentException("Error: Ya existe una rematriculación registrada para este vehículo en la fecha " + fecha);
+            }
+        }
 
-    public int getNumMatricula() {
-        return numMatricula;
-    }
+        Rematriculacion registro = new Rematriculacion(this.vin, this.matricula, nuevaMatricula, fecha);
+        historialRematriculaciones.add(registro);
 
-    public void setNumMatricula(int numMatricula) {
-        this.numMatricula = numMatricula;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public int getAnyoFabricacion() {
-        return anyoFabricacion;
-    }
-
-    public void setAnyoFabricacion(int anyoFabricacion) {
-        this.anyoFabricacion = anyoFabricacion;
-    }
-
-    public String getPropietarioActual() {
-        return propietarioActual;
-    }
-
-    public void setPropietarioActual(String propietarioActual) {
-        this.propietarioActual = propietarioActual;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Vehiculo vehiculo = (Vehiculo) o;
-        return Objects.equals(numBastidor, vehiculo.numBastidor);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(numBastidor);
+        this.matricula = nuevaMatricula;
     }
 
     @Override
     public String toString() {
         return "Vehiculo{" +
-                "numBastidor='" + numBastidor + '\'' +
-                ", numMatricula=" + numMatricula +
+                "vin='" + vin + '\'' +
+                ", matricula='" + matricula + '\'' +
                 ", marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", anyoFabricacion=" + anyoFabricacion +
+                ", anioFabricacion=" + anioFabricacion +
                 ", propietarioActual='" + propietarioActual + '\'' +
+                ", historialRematriculaciones=" + historialRematriculaciones +
                 '}';
     }
 }
