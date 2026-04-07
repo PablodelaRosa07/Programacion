@@ -45,5 +45,11 @@ public class Excepciones {
     Se recomienda :
     Sobreescribir el metodo toString.
     Crear constructor con parámetro message y llamar al super con dicho parámetro.
+
+
+    NullPointerException: Ocurre al intentar acceder a un objeto que es null.
+    ArrayIndexOutOfBoundsException: Intento de acceder a un índice fuera del rango de un array.
+    ArithmeticException: Error aritmético, como dividir por cero.
+    NumberFormatException: Error al convertir un String a un tipo numérico inapropiado.
     */
 }
