@@ -58,5 +58,51 @@ public class InterfazList {
         while(itr.hasNext())
              System.out.println(itr.next());
 
+
+        Recorrer un ArrayList
+        public class EjemploIterator {
+            public static void main(String[] args) {
+                List<String> lista = new ArrayList<>();
+                lista.add("Manzana");
+                lista.add("Banana");
+                lista.add("Naranja");
+
+                // Obtener el iterador
+                Iterator<String> it = lista.iterator();
+
+                // Recorrer la lista
+                while (it.hasNext()) {
+                    String fruta = it.next();
+                    System.out.println(fruta);
+                }
+            }
+        }
+
+
+        Eliminar Elementos de Forma Segura
+        public class EliminarConIterator {
+            public static void main(String[] args) {
+                List<Integer> numeros = new ArrayList<>();
+                for (int i = 1; i <= 5; i++) numeros.add(i);
+
+                Iterator<Integer> it = numeros.iterator();
+                while (it.hasNext()) {
+                    Integer num = it.next();
+                    if (num % 2 == 0) {
+                        it.remove(); // Elimina el elemento par de forma segura
+                    }
+                }
+                System.out.println(numeros); // Salida: [1, 3, 5]
+            }
+        }
+
+
+        Métodos Clave de Iterator
+        hasNext(): Booleano, comprueba si hay más elementos.
+        next(): Devuelve el siguiente objeto.
+        remove(): Elimina el último elemento devuelto por next()
+
+
+
      */
 }
