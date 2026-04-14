@@ -7,9 +7,9 @@ import java.util.TreeMap;
 
 public class TallerRepositorio {
 
-    private Map<Taller> listaTalleres;
+    /*private Map<Taller> listaTalleres;
 
     public TallerRepositorio(Map<Taller> listaTalleres) {
         this.listaTalleres = new TreeMap();
-    }
+    }*/
 }

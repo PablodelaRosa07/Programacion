@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Elige opcion: ");
         int opcion = sc.nextInt();
 
-        Biblioteca biblioteca = new Biblioteca();
+        /*Biblioteca biblioteca = new Biblioteca();
         Prestamo prestamo = new Prestamo(1, Libro libro1)
         Libro libro1 = new Libro("Hola", "Yo", Estado.LIBRE);
         Libro libro2 = new Libro("Adios", "Tu", Estado.LIBRE);
@@ -22,6 +22,6 @@ public class Main {
             if (opcion == 1){
                 biblioteca.prestarLibro(libro1, p);
             }
-        }
+        }*/
     }
 }

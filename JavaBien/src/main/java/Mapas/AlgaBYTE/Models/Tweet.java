@@ -22,9 +22,5 @@ public class Tweet extends Mensajes{
         return almacenamiento;
     }
 
-    public void calcularValoracion(Tweet tweet){
-        if (Valoracion.SUPERBUENA){
 
-        }
-    }
 }

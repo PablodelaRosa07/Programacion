@@ -7,8 +7,9 @@ import java.util.Map;
 
 public class Recomendacion extends Mensajes{
 
-    public Recomendacion(String contenido, LocalDate fechaCreacion, Usuario usuario) {
-        super(contenido, fechaCreacion, usuario);
+
+    public Recomendacion(String contenido, LocalDate fechaCreacion, Usuario usuario, Map valoraciones) {
+        super(contenido, fechaCreacion, usuario, valoraciones);
     }
 
     @Override
