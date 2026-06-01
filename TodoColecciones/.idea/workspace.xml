@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1251c53b-482f-408a-9c38-3e33e25879b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio2/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio2/Contacto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio1/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio1/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio3/RepoTarea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio3/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinOrdenaciones/Ejercicio3/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3EX15PrmZBoJp6KbKJGfdc4WFLt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Repositorio.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
