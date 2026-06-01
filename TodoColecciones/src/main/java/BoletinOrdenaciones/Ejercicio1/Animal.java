@@ -3,7 +3,7 @@ package BoletinOrdenaciones.Ejercicio1;
 import java.util.Date;
 import java.util.Objects;
 
-public class Animal {
+public class Animal implements Comparable<Animal>{
 
     private String identificador;
     private String nombre;
@@ -99,6 +99,21 @@ public class Animal {
         this.peso = peso;
     }
 
+
+
+    @Override
+    public int compareTo(Animal otroAnimal) {
+        int resultado = this.nombre.compareTo(otroAnimal.getNombre());
+
+        if (resultado == 0) {
+            resultado = Integer.compare(this.fechaNacimiento, otroAnimal.getFechaNacimiento());
+        }
+
+        return resultado;
+    }
+
+
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -114,8 +129,7 @@ public class Animal {
     @Override
     public String toString() {
         return "Animal{" +
-                "clasificacicionGestacion=" + clasificacicionGestacion +
-                ", identificador='" + identificador + '\'' +
+                "identificador='" + identificador + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", especie='" + especie + '\'' +
                 ", edad=" + edad +
@@ -123,6 +137,7 @@ public class Animal {
                 ", fechaNacimiento=" + fechaNacimiento +
                 ", peso=" + peso +
                 ", medio=" + medio +
+                ", clasificacicionGestacion=" + clasificacicionGestacion +
                 '}';
     }
 }
