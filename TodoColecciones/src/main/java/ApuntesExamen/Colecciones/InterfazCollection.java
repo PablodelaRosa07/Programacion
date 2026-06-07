@@ -35,7 +35,44 @@ public class InterfazCollection {
         next(): Devuelve el siguiente elemento
         remove(): Borra el último elemento devuelto por next()
 
+
+
+
+
+    public class RepositorioActividades {
+
+    private Set<Actividad> actividades = new HashSet<>();
+
+    // ... (resto de métodos anteriores)
+
+
+    Ejemplo de Iterator: Recorre las actividades y elimina
+    aquellas que ya hayan pasado (anteriores a la fecha dada).
+
+    public void eliminarActividadesCaducadas(LocalDate fechaLimite) {
+        // 1. Obtenemos el iterador del conjunto de actividades
+        Iterator<Actividad> iterador = actividades.iterator();
+
+        // 2. El bucle se ejecuta mientras queden elementos por revisar
+        while (iterador.hasNext()) {
+
+            // 3. Saltamos al siguiente elemento y lo guardamos
+            Actividad unaActividad = iterador.next();
+
+            // 4. Aplicamos la lógica de filtrado
+            if (unaActividad.getFecha().isBefore(fechaLimite)) {
+                System.out.println("Eliminando actividad obsoleta: " + unaActividad.getNombre());
+
+                // 5. Eliminamos el elemento de forma segura usando el iterador
+                iterador.remove();
+            }
+        }
+    }
+}
      */
+
+
+
 
 
 }

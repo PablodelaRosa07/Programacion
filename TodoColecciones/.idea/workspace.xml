@@ -5,14 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1251c53b-482f-408a-9c38-3e33e25879b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/EstadoReserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/Evento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/RepositorioEventos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/Reserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/ReservaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinListas/Ejercicio3/Biblioteca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinListas/Ejercicio3/Estado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinListas/Ejercicio3/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinListas/Ejercicio3/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Controller/GestionaActividadesGuarderia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Models/Actividad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Models/Alumno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Models/Lugar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Models/Maestro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio2/Repository/RepositorioActividades.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BoletinMapas/Ejercicio2/Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BoletinMapas/Ejercicio2/Repositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/ConjuntosoSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/InterfazCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/InterfazComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/InterfazList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/Mapas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/OrdenacionEnListas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Colecciones/Resumen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/ApuntesExamen/Excepciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Estudiante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Grupo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Horario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Instituto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio1/Repositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio2/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio2/DeportivosException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio2/Equipo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinListas/Ejercicio2/Repositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/ClasificacicionGestacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/ClasificacionComida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/Medio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio1/RepositorioAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio2/Agenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio2/Contacto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio3/RepoTarea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio3/Repositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoColecciones/BoletinOrdenaciones/Ejercicio3/Tarea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApuntesExamen/Colecciones/InterfazCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApuntesExamen/Colecciones/InterfazCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/RepositorioEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BoletinSimulaciones/Ejercicio1/RepositorioEventos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -51,27 +87,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.RegistrosEntrada.executor": "Run",
-    "Application.Repositorio.executor": "Run",
-    "Application.RepositorioEventos.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion.inline"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.RegistrosEntrada.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Repositorio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RepositorioEventos.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -82,8 +118,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
       </set>
     </attachedChunks>
   </component>
@@ -99,5 +134,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="BoletinSimulaciones.Ejercicio1.ReservaException" package="BoletinSimulaciones.Ejercicio1" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

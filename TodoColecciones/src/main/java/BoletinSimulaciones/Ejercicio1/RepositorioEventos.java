@@ -24,10 +24,12 @@ public class RepositorioEventos {
 
         repositorioEventos.crearEvento(evento1, repositorioEventos, fecha3);
 
-        repositorioEventos.agregarReserva(usuario1.getEmail(), evento1.getNombreEvento(), repositorioEventos, reserva1);
-        repositorioEventos.agregarReserva(usuario1.getEmail(), "Sevilla 2", repositorioEventos, reserva1);
+        repositorioEventos.agregarReserva(usuario1.getEmail(), "Sevilla Centro", repositorioEventos, reserva1);
 
         repositorioEventos.devolverReserva(reserva1.getIdReserva(), evento1.getNombreEvento(), fecha1, repositorioEventos);
+
+        repositorioEventos.modificarReserva(1, "Sevilla Centro", fecha1, usuario1);
+
     }
 
     private List<Evento> listaEventos;
@@ -99,8 +101,42 @@ public class RepositorioEventos {
 
     }
 
-    public void modificarReserva(int idReserva, String nombreEvento, LocalDate fechaEvento, Usuario usuario){
-        
+    public void modificarReserva(int idReserva, String nombreEvento, LocalDate fechaEvento, Usuario usuario) {
+        System.out.println("MODIFICANDO RESERVA");
+
+        Evento eventoEncontrado = null;
+        int i = 0;
+
+        while (i < this.listaEventos.size() && eventoEncontrado == null) {
+            Evento eventoActual = this.listaEventos.get(i);
+            if (eventoActual.getNombreEvento().equals(nombreEvento) && eventoActual.getFechaEvento().equals(fechaEvento)) {
+                eventoEncontrado = eventoActual;
+            }
+            i++;
+        }
+
+        if (eventoEncontrado == null) {
+            throw new ReservaException("No existe un evento en el repositorio con ese nombre y esa fecha");
+        }
+
+        Reserva reservaEncontrada = null;
+        int j = 0;
+        List<Reserva> reservasDelEvento = eventoEncontrado.getListaReservas();
+
+        while (j < reservasDelEvento.size() && reservaEncontrada == null) {
+            Reserva reservaActual = reservasDelEvento.get(j);
+            if (reservaActual.getIdReserva() == idReserva) {
+                reservaEncontrada = reservaActual;
+            }
+            j++;
+        }
+
+        if (reservaEncontrada == null) {
+            throw new ReservaException("No existe una reserva con ese identificador asociada a ese evento");
+        }
+
+        reservaEncontrada.setUsuarioReserva(usuario);
+        System.out.println("Reserva modificada con éxito para el usuario: " + usuario.getNombreCompleto());
     }
 
 
